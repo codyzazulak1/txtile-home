@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Txtile - Powering your SMS surveys.</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="application/xhtml+xml; IE=edge,chrome=1">
+    <meta name="description" content="Txtile: Powering your SMS surveys.">
+    <meta name="author" content="txtile">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/normalize-3.0.2.4555077d4964.css">
+    <link rel="stylesheet" href="stylesheets/open-sans-1.0.0.e9afdfbb57ba.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap-modal.3.3.2.min.098632dd52f9.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/main.9aa53fada8d9.css">
+    <link rel="stylesheet" href="stylesheets/modals.82e7f2d48727.css">
+    <link rel="stylesheet" href="stylesheets/icons.a9a1b185ff1b.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+
+    <script src="scripts/jquery-2.1.3.min.32015dd42e95.js"></script>
+    <script src="scripts/froogaloop2.min.08a049c1b9f9.js"></script>
+    <script src="scripts/main.54dc49dae796.js"></script>
+    <script src="scripts/modals.92edd16cffa1.js"></script>
+    <script src="scripts/bootstrap-modal.3.3.2.min.f6ff10fadbc6.js"></script>
+    <script src="scripts/script.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/tabpic.png">
+    <link rel="icon" type="image/png" href="images/tabpic.png" sizes="192x192">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="//d18wj0jon4m8iy.cloudfront.net/static/www/img/favicon/mstile-144x144.97a1ab5f6277.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+
+<body>
+  <div class="hero">
+    <div class="wrap">
+      <header>
+        <div class="logo left">
+          <a href="index.html">
+            <img class="highlight" src="images/logo.png">
+          </a>
+        </div>
+        <div class="login right">
+          <a href="#" class="cta" data-toggle="modal" data-target="#myModal">Sign up</a>
+        </div>
+      </header>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Sign Up</h4>
+          </div>
+          <div class="modal-body">
+
+            <form class="form-group myform" id="myForm">
+              <div class="form-group">
+                <input type="text" class="form-control cellWithMargin" id="company" placeholder="Company Name">
+                <input type="text" class="form-control cellWithMargin" id="email" placeholder="Email">
+                <input type="text" class="form-control cellWithMargin" id="password" placeholder="Password">
+                <input type="text" class="form-control cellWithMargin" id="confirmPassword" placeholder="Confirm Password">
+              </div>
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="orangeButton" class="btn btn-primary loginFormButton custom-close" data-toggle="modal" data-target="#myModal2">Sign Up</button>
+          </div>
+
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Or Login</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-group myform" id="myForm">
+              <div class="form-group">
+                <input type="text" class="form-control cellWithMargin" id="email" placeholder="Email">
+                <input type="text" class="form-control cellWithMargin" id="password" placeholder="Password">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button href="index.html" type="button" id="orangeButton" class="btn btn-primary loginFormButton" onclick="location.href='index.html'">Login</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Create Your First Survey</h4>
+          </div>
+          <div class="modal-body">
+
+            <form class="form-group myform" id="myForm">
+              <div class="form-group">
+                <input type="text" class="form-control cellWithMargin" id="company" placeholder="Create a question to ask">
+                <input type="text" class="form-control cellWithMargin" id="email" placeholder="Answer [A]">
+                <input type="text" class="form-control cellWithMargin" id="password" placeholder="Answer [B]">
+                <input type="text" class="form-control cellWithMargin" id="confirmPassword" placeholder="Answer [C]">
+                <input type="text" class="form-control cellWithMargin" id="confirmPassword" placeholder="Answer [D]">
+              </div>
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <button href="index.html" type="button" id="orangeButton" class="btn btn-primary loginFormButton" onclick="location.href='prices.html'">Sign Up</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+      <div class="content">
+        <section class="left" id="cta-container">
+          <h1>Powering your SMS surveys!</h1>
+            <a id="cta" data-toggle="modal" data-target="#myModal">
+              <span class="icon x30 fa fa-bars"></span>
+              <span> - Sign Up Now!</span>
+              <div class="clearfix"></div>
+            </a>
+        </section>
+        <section class="right">
+          <div class="wallet">
+            <img class="illustration" id="static" src="images/placeholder.jpg">
+            <img class="illustration" id="highlight" src="images/bg-highlight.png">
+            <img class="illustration" id="background" src="images/placeholder.jpg" alt="credit card illustration">
+            <img class="illustration" id="shadow" src="images/bg-shadow.png">
+          </div>
+        </section>
+        <div class="clearfix"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="features">
+    <div class="feature">
+      <div class="wrap">
+        <section class="left">
+          <h2>Simplify Engagement</h2>
+          <p>Lorem ipsum dolor sit amet, pri tibique postulant aliquando cu, unum elaboraret sit ad. Per suas contentiones eu. Mei ei delicata incorrupte, vel ut causae facilisis definitionem. Probatus sadipscing pro ex.</p>
+        </section>
+        <section class="right">
+          <div class="iphone">
+            <img class="illustration" src="images/mobile-prototype2.png">
+          </div>
+        </section>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="wrap">
+        <section class="left">
+          <h2>Real-Time Updates</h2>
+          <p>Id wisi discere constituto vis. In sea viderer inermis rationibus. Vis an veri natum eruditi. In eos affert facilisis definiebas, eruditi debitis vel in, ex audiam delectus pericula vis. Wisi expetendis pri eu, quidam dolorum delicata est eu.</p>
+        </section>
+        <section class="right">
+          <div class="macbook">
+            <img class="illustration" src="images/webapp-prototype2.png">
+          </div>
+        </section>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="container">
+        <div class="row">
+
+          <div><h4 class="listItem"><p class="dollarTitle"><span class="firstDollarSign">$</span><span class="listItem price">1</span>/completed survey. Always.</h4></p></div>
+
+          <div class="col-sm-6 col-md-4">
+            <ul class="list-group">
+              <li class="list-group-item topBasic"><h3 class="listItem">BASIC</h3></li>
+              <li class="list-group-item priceBasic"><h4 class="listItem"><span class="dollarSign">$</span><span class="listItem price">0</span>/month</h4></li>
+              <li class="list-group-item grey">1 Survey</li>
+              <li class="list-group-item white">5 Answers</li>
+              <li class="list-group-item grey">Basic Metric Exporting</li>
+            </ul></a>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <ul class="list-group">
+              <li class="list-group-item topIntermediate"><h3 class="listItem">PRO</h3></li>
+              <li class="list-group-item priceIntermediate"><h4 class="listItem"><span class="dollarSign">$</span><span class="listItem price">29.95</span>/month</h4></li>
+              <li class="list-group-item grey">5 Surveys</li>
+              <li class="list-group-item white">5 Answers / Survey</li>
+              <li class="list-group-item grey">Custom Short Codes</li>
+              <li class="list-group-item white">Premium Metric Exporting</li>
+              <li class="list-group-item grey">Email Support</li>
+            </ul>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <ul class="list-group">
+              <li class="list-group-item topProfessional"><h3 class="listItem">BUSINESS</h3></li>
+              <li class="list-group-item priceProfessional"><h4 class="listItem"><span class="dollarSign">$</span><span class="listItem price">49.95</span>/month</h4></li>
+              <li class="list-group-item grey">15 Surveys</li>
+              <li class="list-group-item white">5 Answers / Survey</li>
+              <li class="list-group-item grey">Custom Short Codes</li>
+              <li class="list-group-item white">Customizable Premium Metric Exporting</li>
+              <li class="list-group-item grey">Priority Phone Support 7 Days / Week</li>
+              <li class="list-group-item white">Optional Custom Phone Number</li>
+              <li class="list-group-item grey">Vestibulum at eros</li>
+            </ul>
+          </div>
+
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+    </div>    
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <section class="cta-section">
+        <a class="footer-cta" href="#" data-toggle="modal" data-target="#myModal">Sign up</a>
+      </section>
+      <section>
+        <span>Standard text messaging rates may apply based on the subscriber's plan with their mobile phone carrier.</span><br/>
+        <span class="small">© 2015 Txtile, All Rights Reserved</span>
+      </section>
+      <div class="clearfix"></div>
+    </div>
+  </footer>
+</body>
+</html>

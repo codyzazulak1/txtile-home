@@ -1,0 +1,723 @@
+/* Pagewide selectors. */
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li, span {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.hero h1 {
+  font-size: 2.87em;
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.2;
+  max-width: 400px;
+  position: absolute;
+  top: 0;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type=text],
+input[type=search],
+input[type=url],
+input[type=email],
+input[type=number],
+textarea {
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+section {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+@media only screen and (max-width: 768px) {
+  section {
+    width: 100%;
+    display: block;
+  }
+  .hero h1 {
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    display: block;
+  }
+}
+
+
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+/* Hero (top of page: wallet illustration + signup form). */
+
+.hero {
+  background: #000000;
+  height: auto;
+  z-index: 1;
+  padding-bottom: 5em;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #000000 0%, #fa9c40 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #fa9c40));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #000000 0%, #fa9c40 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #000000 0%, #fa9c40 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #000000 0%, #fa9c40 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #000000 0%, #fa9c40 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#fa9c40',GradientType=0 );
+  /* IE6-9 */
+}
+@media only screen and (max-width: 768px) {
+  .hero {
+    padding-bottom: 3em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hero {
+    padding-bottom: 1em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .wrap {
+    padding: 0 40px;
+  }
+  section.left,
+  .logo.left {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  .features section.left {
+    margin-top: 3em;
+  }
+  section.right,
+  .login.right {
+    float: none;
+  }
+  .logo {
+    margin-bottom: 2em;
+  }
+}
+
+
+/* Wallet illustration in hero section. */
+
+.wallet {
+  position: relative;
+  height: 375px;
+  width: 482px;
+  padding-bottom: 3em;
+}
+@media only screen and (max-width: 975px) {
+  .wallet {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wallet {
+    margin: 0 auto;
+    margin-top: 4em;
+    padding-bottom: 4em;
+    width: 100%;
+    height: auto;
+  }
+}
+
+#highlight {
+  position: absolute;
+  top: -150px;
+  left: 0px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+#background {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+}
+
+
+#second-card {
+  position: absolute;
+  top: 20px;
+  left: -1px;
+  z-index: 4;
+  transition: 0.5s;
+}
+#second-card:hover {
+  top: -10px;
+  left: -1px;
+  transition: 0.5s;
+}
+@media only screen and (max-width: 768px) {
+  #second-card {
+    left: 0px;
+  }
+}
+
+.wallet #static {
+  display: none;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .wallet .illustration {
+    display: none;
+  }
+  .wallet #static {
+    display: block;
+  }
+}
+
+#wallet-foreground {
+  z-index: 5;
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+#shadow {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  bottom: -40px;
+  left: 0px;
+}
+@media only screen and (max-width: 768px) {
+  #shadow {
+    bottom: 120px;
+  }
+}
+
+/* Header (logo + login). */
+
+header {
+  width: 100%;
+  position: relative;
+  margin-bottom: 12.5%;
+  padding-top: 3em;
+  padding-bottom: 1em;
+}
+
+header .logo img {
+  height: 25px;
+}
+
+.login a {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-left: 2em;
+}
+.login a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.login a:focus {
+  color: #fff;
+}
+@media only screen and (max-width: 768px) {
+  header .login a {
+    margin: 1em;
+  }
+}
+
+.login.right {
+  line-height: 25px;
+  text-align: center;
+}
+
+/* Press bar */
+.press {
+  background: #eee;
+  padding: 2em;
+  border-bottom: 1px solid #ccc;
+  font-weight: 300;
+  text-align: center;
+}
+
+.press span {
+  font-size: 45px;
+  vertical-align: middle;
+}
+
+.press .image {
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+}
+
+.press .launch-icon {
+  height: 80px;
+  width: 50px;
+  background-image: url("/static/www/img/launch.a45ae98871a7.png");
+  margin-right: 5px;
+}
+
+.press .disrupt-logo {
+  height: 80px;
+  width: 385px;
+  background-image: url("/static/www/img/disrupt.4c071b34085c.png");
+  margin-left: 5px;
+}
+
+.press .press-1,
+.press .press-2 {
+  height: 40px;
+  width: 475px;
+  opacity: 0.7;
+  margin: 0 0.25em;
+}
+.press .press-1{
+  background: url("/static/www/img/press-1.49d0ed4c5fd5.png");
+}
+
+.press .press-2 {
+  background: url("/static/www/img/press-2.f72c48d84aba.png");
+}
+
+/* Features */
+
+.feature {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+.feature .wrap {
+  min-height: 500px;
+}
+
+.feature .left {
+  width: 425px;
+  margin-right: 75px;
+}
+@media only screen and (max-width: 768px) {
+  .feature .left {
+    width: inherit;
+    margin-right: 0;
+  }
+}
+.feature .illustration {
+  display: block;
+  margin: auto;
+}
+
+.iphone {
+  background: url("../images/iphone.af4157b6f1ec.svg");
+  background-size: 500px 670px;
+  width: 500px;
+  height: 500px;
+  box-sizing: border-box;
+  padding-left: 21.3%;
+  padding-top: 17.0%;
+  padding-right: 21%;
+
+  /* To abstract out later. */
+  margin-top: 4em;
+  overflow: hidden;
+}
+
+/* Nota bene:
+ * we should merge the macbook background and foreground
+ * at some point because this is gross.
+ */
+.macbook {
+  background: url("../images/macbook.351939844def.svg") no-repeat;
+  background-size: 600px 288px;
+  width: 600px;
+  height: 325px;
+  box-sizing: border-box;
+  padding-left: calc(23.8% + 9px);
+  padding-top: calc(4.1% - 1px);
+  padding-right: calc(23.0% + 9px);
+  margin-top: 4em;
+  margin-left: -50px;
+  overflow: hidden;
+
+  /* To abstract out later. */
+  margin-top: 4em;
+}
+@media only screen and (max-width: 1000px) {
+  .macbook, .iphone {
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: 0
+  }
+  .macbook .illustration {
+    width: 115%;
+    max-width: 115%;
+    margin-left: -8%;
+    margin-top: -2px
+  }
+  .feature .right {
+    overflow-x: hidden;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .macbook {
+    /* Single column layout actually makes this bigger at certain viewports, so we compensate. */
+    height: 400px;
+  }
+}
+
+.features h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.features p,
+.features li {
+  /*font-size: 16px;*/
+  /*color: #747f93;*/
+}
+
+.features li {
+  list-style-type: none;
+  /*margin-top: 0.5em;*/
+  line-height: 28px;
+  text-align: left;
+}
+
+.features ul {
+  padding-left: 0;
+  display: inline-block;
+  margin-top: 0;
+}
+
+.features .icon {
+  background-color: #747f93;
+  color: #fff;
+  width: 30px;
+  height: 28px;
+  box-sizing: border-box;
+  line-height: 28px;
+  margin-right: 10px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+
+.cta-section a {
+  color: #fff;
+  font-size: 16px;
+}
+.cta-section a:hover {
+  color: #fff;
+  border-bottom: 1px #fff solid;
+}
+
+
+/* Footer (copyright + sitenav). */
+
+footer {
+  background-color: #333;
+  color: #9ea0c0;
+  font-size: 14px;
+  width: 100%;
+  float: left;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+footer section {
+  line-height: 2em;
+  width: 100%;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+footer a {
+  color: #9ea0c0;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 1em;
+  letter-spacing: 1px;
+}
+footer a:hover {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px #9ea0c0 solid;
+}
+footer .small {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.features .wrap,
+.content {
+  display: flex;
+  align-items: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .features .wrap,
+  .content {
+    display: block;
+  }
+  footer section {
+    margin: 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  footer a {
+    margin: 0;
+  }
+}
+
+.cta-holder {
+  height: 45px;
+}
+
+#cta-container {
+  position: relative;
+  height: 250px;
+}
+#cta {
+  float: left;
+  display: block;
+  border-radius: 60px;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.5);
+  padding: 35px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+  position: absolute;
+  bottom: 0;
+}
+#cta:hover {
+  text-decoration: none;
+  padding: 40px;
+  transition: 0.2s;
+  margin-left: -5px;
+  bottom: -5px;
+}
+#cta:hover ~ h1 {
+  margin-bottom: 10px;
+  color: red;
+}
+#cta span { vertical-align: middle; }
+@media only screen and (max-width: 768px) {
+  #cta {
+    float: none;
+    width: 350px;
+    left: calc(50% - 175px);
+  }
+  #cta:hover {
+    width: 360px;
+  }
+  #cta-container {
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #cta-container {
+    /* Hero text can wrap to three lines. */
+    height: 300px;
+  }
+}
+
+a.cta {
+  background-color: orange;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.cta-section a.footer-cta {
+  display: inline-block;
+  border: none;
+  background-color: orange;
+  color: #fff;
+  font-family: "Open Sans";
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 2em;
+  min-width: 200px;
+  border-bottom: none;
+}
+a.footer-cta:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Overlaps with other headernav elements on mobile. */
+  a.cta {
+    display: block;
+  }
+  a.footer-cta {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
+
+
+/* Utility. */
+
+.wrap {
+  max-width: 1000px;
+  padding: 0 40px;
+  margin: 0 auto;
+  display:block;
+  vertical-align: middle;
+}
+
+.accent {
+  color: #fff;
+  font-style: italic;
+  margin: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .accent {
+    margin: 10px;
+  }
+}
+
+.illustration {
+  width: 100%;
+  max-width: 100%;
+}
+
+/*.white { color: white; }*/
+
+.left { float: left; }
+.right { float: right; }
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+
+/* Misc. */
+
+header .right,
+footer .right {
+  box-sizing: border-box;
+  padding-right: 2em;
+}
+@media only screen and (max-width: 768px) {
+  header .right,
+  footer .right {
+    padding-right: 0;
+  }
+}
+
+#videoModal .modal-dialog {
+  width: 960px;
+}
+#videoModal .modal-body {
+  padding: 0px;
+}
+@media only screen and (max-width: 1000px) {
+  #videoModal .modal-dialog {
+    width: 90%;
+    margin-left: 5%;
+  }
+  #videoModal iframe {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+
+/* Printable. */
+
+@media print {
+  html {
+    background: transparent;
+    color: #000;
+    box-shadow: none;
+    text-shadow: none;
+  }
+  html:before, html:after {
+    background: transparent;
+    color: #000;
+    box-shadow: none;
+    text-shadow: none;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  a[href^="#"]:after, a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr {
+    page-break-inside: avoid;
+  }
+
+  img {
+    page-break-inside: avoid;
+    max-width: 100%;
+  }
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}

@@ -1,0 +1,298 @@
+@font-face {
+  font-family: dense;
+  src: url(Dense-Regular.otf);
+}
+
+@font-face {
+  font-family: chaletLon;
+  src: url(ChaletLondonNineteenSeventy.ttf);
+}
+
+@font-face {
+  font-family: gliphs;
+  src: url(glyphicons-halflings-regular.ttf);
+}
+
+/*h2 {
+  font-family: chaletLon;
+  font-weight: bold;
+  font-size: 34px;
+}*/
+
+a {text-decoration:none; color:#55acee;}
+a:visited {text-decoration:none; color:#55acee;}
+a:hover {text-decoration:none; color:#55acee; opacity: 0.9;}
+a:focus {text-decoration:none; color:#55acee;}
+a:hover, a:active {text-decoration:none; color:#55acee; opacity: 0.9;}
+
+body.login {
+  padding-top: 100px;
+  background: url('bg9.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-opacity: 0.2;
+}
+
+body.index {
+  background-color: #FBFBFB;
+}
+
+#indexMainDiv {
+  padding-top: 70px;
+  height: 100%;
+}
+
+.row2 {
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  background-color: white;
+  border-color: lightgrey;
+  padding: 10px;
+}
+
+.row3 {
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  background-color: white;
+  border-color: lightgrey;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.panel-heading a:after {
+  font-family:gliphs;
+  content:"\e114";
+  float: right;
+  color: grey;
+}
+.panel-heading a.collapsed:after {
+  content:"\e080";
+}
+
+.navbar-header {
+  width: 100%;
+}
+
+.navbar {
+  padding: 10px;
+  background-color: #333;
+  border-style: none;
+  border-radius: 0;
+  min-width: 100%;
+}
+
+.mainImage {
+  width: 333px;
+}
+
+#slogan {
+  margin-top: 30px;
+  color: white; 
+  text-align: center;
+  font-size: 53px;
+  margin-bottom: -20px;
+  font-weight: lighter;
+  font-family: dense;
+  /*text-shadow: 2px 2px black;*/
+}
+
+#underslogan {
+  margin-top: 35px;
+  color: white;
+  /*text-shadow: 2px 2px black;*/
+  text-align: center;
+  font-size: 35px;
+  font-weight: lighter;
+  font-family: dense;
+}
+
+#logo {
+  margin-top: -12.5px;
+  margin-left: 10px;
+  height: 45px;
+  content: url('FINISHED.png');
+}
+
+#mainDiv {
+  height: 100%;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#mainButton {
+  padding-left: 135px;
+  padding-right: 135px;
+  background-color: #FBFBFB;
+  color: orange;
+  border-color: #FBFBFB;
+  font-size: 14px;
+  height: 50px;
+}
+
+#mainButton:hover {
+  background-color: orange;
+  color: #FBFBFB;
+  border-color: orange;
+}
+
+#saveQuestionButton {
+  background-color: #FBFBFB;
+  color: orange;
+  border-color: orange;
+  width: 100px;
+}
+
+#saveQuestionButton:hover {
+  background-color: orange;
+  color: #FBFBFB;
+  border-color: orange;
+}
+
+#logoutButton {
+  background-color: #FBFBFB;
+  color: orange;
+  border-color: orange;
+  width: 100px;
+  float: right;
+  margin-right: 31px;
+}
+
+#logoutButton:hover {
+  background-color: orange;
+  color: #FBFBFB;
+  border-color: orange;
+}
+
+#orangeButton {
+  background-color: #FBFBFB;
+  color: orange;
+  border-color: orange;
+}
+
+#orangeButton:hover {
+  background-color: orange;
+  color: #FBFBFB;
+  border-color: orange;
+}
+
+.modal {
+  margin-top: 70px;
+}
+
+.modal-content {
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important; 
+}
+
+.modal-body {
+  background-color: #FBFBFB;
+}
+
+.modal-header {
+  background-color: #FBFBFB; 
+}
+
+#myModalLabel {
+  text-align: left;
+}
+
+.loginFormButton {
+  width: 100%;
+}
+
+.cellWithMargin {
+  margin-bottom: 10px;
+}
+
+#questionForm {
+  background-color: white;
+}
+
+.topBasic {
+  background-color: rgb(245,245,245);
+  color: rgb(254,195,78);
+}
+
+.topIntermediate {
+  background-color: rgb(245,245,245);
+  color: rgb(248,146,44);
+}
+
+.topProfessional {
+  background-color: rgb(245,245,245);
+  color: rgb(231,93,46);
+}
+
+.priceBasic {
+  color: rgb(254,195,78);
+  color: black;
+}
+
+.priceIntermediate {
+  color: rgb(248,146,44);
+  color: black;
+}
+
+.priceProfessional {
+  color: rgb(231,93,46);
+  color: black;
+}
+
+.grey {
+  background-color: rgb(245,245,245);
+}
+
+.white {
+  background-color: rgb(255,255,255);
+}
+
+.list-group-item:first-child, .list-group-item:last-child {
+  border-radius: 0px;
+}
+
+.list-group {
+  width: 100%;
+}
+
+h3.listItem {
+  text-align: center;
+  font-size: 30px;
+}
+
+h4.listItem {
+  text-align: center;
+}
+
+span.price {
+  font-weight: bold;
+}
+
+span.listItem {
+  font-size: 40px;
+}
+
+span.dollarSign {
+  position: relative;
+  top: -13px;
+}
+
+span.firstDollarSign {
+  position: relative;
+  top: -11px;
+  font-size: 25px;
+}
+
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.dollarTitle {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 15px;
+}

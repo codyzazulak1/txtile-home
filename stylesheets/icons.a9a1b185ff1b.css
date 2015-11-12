@@ -1,0 +1,115 @@
+.icon {
+    display: inline-block;
+    text-align: center;
+    vertical-align: inherit;
+    text-rendering: geometricPrecision;
+}
+
+/* Icon sizes. */
+.icon.x10 { width: 10px; height: 10px; font-size: 10px; line-height: 10px; }
+.icon.x15 { width: 15px; height: 15px; font-size: 15px; line-height: 15px; }
+.icon.x20 { width: 20px; height: 20px; font-size: 20px; line-height: 20px; }
+.icon.x25 { width: 25px; height: 25px; font-size: 25px; line-height: 25px; }
+.icon.x30 { width: 30px; height: 30px; font-size: 30px; line-height: 30px; }
+.icon.x35 { width: 35px; height: 35px; font-size: 35px; line-height: 35px; }
+.icon.x40 { width: 40px; height: 40px; font-size: 40px; line-height: 40px; }
+.icon.x50 { width: 50px; height: 50px; font-size: 50px; line-height: 50px; }
+
+/* Icon colors. */
+.icon.green { color: #393; }
+.icon.red { color: #c00; }
+
+/* Glyph icons. */
+a.icon:empty:hover { text-decoration: none; cursor: pointer; }
+.icon.user:before { font-family: "FontAwesome"; content: "\f007"; }
+.icon.users:before { font-family: "FontAwesome"; content: "\f0c0"; }
+.icon.plus-square:before { font-family: "FontAwesome"; content: "\f0fe"; }
+.icon.edit:before { font-family: "FontAwesome"; content: "\f044"; }
+.icon.list:before { font-family: "FontAwesome"; content: "\f03a"; }
+.icon.sort-desc:before { font-family: "FontAwesome"; content: "\f0dd"; }
+.icon.sort-asc:before { font-family: "FontAwesome"; content: "\f0de"; }
+.icon.check:before { font-family: "FontAwesome"; content: "\f00c"; }
+.icon.check-circle:before { font-family: "FontAwesome"; content: "\f058"; }
+.icon.close:before { font-family: "FontAwesome"; content: "\f00d"; }
+.icon.arrow-right:before { font-family: "FontAwesome"; content: "\f061"; }
+.icon.arrow-circle-right:before { font-family: "FontAwesome"; content: "\f0a9"; }
+.icon.envelope:before { font-family: "FontAwesome"; content: "\f0e0"; }
+.icon.envelope-o:before { font-family: "FontAwesome"; content: "\f003"; }
+.icon.mobile:before { font-family: "FontAwesome"; content: "\f10b"; }
+.icon.bank:before { font-family: "FontAwesome"; content: "\f19c"; }
+.icon.dollar:before { font-family: "FontAwesome"; content: "\f155"; }
+.icon.clock:before { font-family: "FontAwesome"; content: "\f017"; }
+.icon.info-circle:before { font-family: "FontAwesome"; content: "\f05a"; }
+.icon.caret-down:before { font-family: "FontAwesome"; content: "\f0d7"; }
+.icon.caret-right:before { font-family: "FontAwesome"; content: "\f0da"; }
+.icon.calendar:before { font-family: "FontAwesome"; content: "\f073"; }
+.icon.calendar-o:before { font-family: "FontAwesome"; content: "\f133"; }
+.icon.circle-thin:before { font-family: "FontAwesome"; content: "\f1db"; }
+.icon.map-marker:before { font-family: "FontAwesome"; content: "\f041"; }
+.icon.exclamation-circle:before { font-family: "FontAwesome"; content: "\f06a"; }
+.icon.lock:before { font-family: "FontAwesome"; content: "\f023"; }
+.icon.chain-broken:before { font-family: "FontAwesome"; content: "\f127"; }
+.icon.external-link:before { font-family: "FontAwesome"; content: "\f08e"; }
+
+/* Numbers badges. */
+.icon.number { position: relative; }
+.icon.number:before { font-family: "FontAwesome"; content: "\f1db"; }
+.icon.number:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 0.6em;
+    font-family: monospace;
+    content: "#";
+}
+.icon.number.n1:after { content: "1"; }
+.icon.number.n2:after { content: "2"; }
+.icon.number.n3:after { content: "3"; }
+
+/* Category badges. */
+.icon.category:before { font-family: "FontAwesome"; }
+.icon.category.c1:before   { content: "\f02d"; }    /* Books & Education (book) */
+.icon.category.c2:before   { content: "\f06b"; }    /* Charity & Organizations (gift) */
+.icon.category.c3:before   { content: "\f07a"; }    /* Clothing & Accessories (shopping-cart) */
+.icon.category.c4:before   { content: "\f109"; }    /* Electronics & Media (laptop) */
+.icon.category.c5:before   { content: "\f145"; }    /* Entertainment (ticket) */
+.icon.category.c6:before   { content: "\f0d6"; }    /* Financial (money) */
+.icon.category.c7:before   { content: "\f1e3"; }    /* Fitness (futbol) */
+.icon.category.c8:before   { content: "\f0f5"; }    /* Food & Dining (cutlery) */
+.icon.category.c9:before   { content: "\f1fc"; }    /* Hobbies (paint-brush) */
+.icon.category.c10:before  { content: "\f015"; }    /* Home (camera-retro) */
+.icon.category.c11:before  { content: "\f05a"; }    /* Personal Care (info-circle) */
+.icon.category.c12:before  { content: "\f0fc"; }    /* Prohibited (beer) */
+.icon.category.c13:before  { content: "\f0f7"; }    /* Services (building) */
+.icon.category.c14:before  { content: "\f07a"; }    /* Shopping (shopping-cart) */
+.icon.category.c15:before  { content: "\f1b9"; }    /* Transportation (car) */
+.icon.category.c16:before  { content: "\f072"; }    /* Travel (airplane) */
+.icon.category.c17:before  { content: "\f0eb"; }    /* Utilities (lightbulb) */
+
+/* Spinners. */
+.icon.notched-circle:before { font-family: "FontAwesome"; content: "\f1ce"; }
+.icon.spin {
+    text-rendering: geometricPrecision;
+    -webkit-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
