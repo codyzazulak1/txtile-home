@@ -397,7 +397,7 @@ header .logo img {
 @media only screen and (max-width: 530px) {
   .feature:nth-child(2) {
     /* Single column layout actually makes this bigger at certain viewports, so we compensate. */
-    height: 400px;
+    height: 450px;
   }
 }
 
