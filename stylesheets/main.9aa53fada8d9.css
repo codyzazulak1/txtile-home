@@ -401,6 +401,11 @@ header .logo img {
   }
 }
 
+.illustration {
+  width: 100%;
+  max-width: 100%;
+}
+
 .features h2 {
   font-size: 26px;
   font-weight: 600;
@@ -617,11 +622,6 @@ a.footer-cta:hover {
   .accent {
     margin: 10px;
   }
-}
-
-.illustration {
-  width: 100%;
-  max-width: 100%;
 }
 
 /*.white { color: white; }*/
