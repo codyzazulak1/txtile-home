@@ -21,9 +21,9 @@
 
 a {text-decoration:none; color:#55acee;}
 a:visited {text-decoration:none; color:#55acee;}
-a:hover {text-decoration:none; color:#55acee; opacity: 0.9;}
+/*a:hover {text-decoration:none; color:#55acee; opacity: 0.9;}*/
 a:focus {text-decoration:none; color:#55acee;}
-a:hover, a:active {text-decoration:none; color:#55acee; opacity: 0.9;}
+/*a:hover, a:active {text-decoration:none; color:#55acee; opacity: 0.9;}*/
 
 body.login {
   padding-top: 100px;
@@ -295,4 +295,12 @@ span.firstDollarSign {
   text-align: center;
   font-size: 30px;
   padding-bottom: 15px;
+}
+
+.hero {
+  background: url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: auto;
 }

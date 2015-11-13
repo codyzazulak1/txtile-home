@@ -231,7 +231,7 @@ header {
 }
 
 header .logo img {
-  height: 25px;
+  height: 40px;
 }
 
 .login a {
@@ -379,10 +379,10 @@ header .logo img {
     margin-left: 0
   }
   .macbook .illustration {
-    width: 115%;
-    max-width: 115%;
-    margin-left: -8%;
-    margin-top: -2px
+    width: calc(115% + 22px);
+    max-width: calc(115% + 22px);
+    margin-left: calc(-8% - 11px);
+    margin-top: -4px
   }
   .feature .right {
     overflow-x: hidden;
@@ -390,6 +390,12 @@ header .logo img {
 }
 @media only screen and (max-width: 768px) {
   .macbook {
+    /* Single column layout actually makes this bigger at certain viewports, so we compensate. */
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .feature:nth-child(2) {
     /* Single column layout actually makes this bigger at certain viewports, so we compensate. */
     height: 400px;
   }
@@ -430,7 +436,6 @@ header .logo img {
   border-radius: 50%;
   font-size: 18px;
 }
-
 
 .cta-section a {
   color: #fff;
@@ -584,7 +589,7 @@ a.footer-cta:hover {
 @media only screen and (max-width: 768px) {
   /* Overlaps with other headernav elements on mobile. */
   a.cta {
-    display: block;
+    display: none;
   }
   a.footer-cta {
     width: 100%;
